@@ -1,6 +1,3 @@
-# Jeannie Pangaldan, ID: 001219661
-# WGU: C950 Project
-
 import csv
 from Package import loadPackageData, initializePackages
 from GUIDesigner import buildGUI
