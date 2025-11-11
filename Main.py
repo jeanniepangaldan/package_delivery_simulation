@@ -1,24 +1,27 @@
+# Jeannie Pangaldan, ID: 001219661
+# WGU: C950 Project
+
 import csv
-from package import load_package_data, initialize_packages
-from gui_designer import build_gui
+from Package import loadPackageData, initializePackages
+from GUIDesigner import buildGUI
 
 # Load package data from Package.csv
-load_package_data('Package.csv')
+loadPackageData('Package.csv')
 
-# Read dsiatnces from Distance.csv
-with open('Distance.csv', 'r') as distance_csv:
-  distance_data = csv.reader(distance_csv)
-  distance_list = list(distance_data)
+# Read distances from Distance.csv
+with open('Distance.csv', 'r') as distanceCSV:
+    distanceData = csv.reader(distanceCSV)
+    distanceList = list(distanceData)
 
-# Read addresses from Address.csv
-with open('Address.csv', 'r') as address_csv:
-  next(address_data)
-  address_list = list(address_data)
+# Read Addresses from Address.csv
+with open('Address.csv', 'r') as addressCSV:
+    addressData = csv.reader(addressCSV)
+    next(addressData)
+    addressList = list(addressData)
 
 # Initialize packages
-initialize_packages()
+initializePackages()
 
 # Open GUI
-build_gui()
-  
-  
+buildGUI()
+
